@@ -1,16 +1,99 @@
-# React + Vite
+# 🚗 AutoHub – Car E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A full-stack car e-commerce web application built with React, Node.js, Express, and MongoDB.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 **[Visit AutoHub](https://rococo-kulfi-28d0b6.netlify.app/)**
 
-## React Compiler
+## 💻 GitHub Repositories
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** https://github.com/Karthikeya20020321/Autohub-client
+* **Backend:** https://github.com/Karthikeya20020321/Autohub-server
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Frontend
+
+* React.js
+* Vite
+* Axios
+* React Router
+* JavaScript
+* CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* bcryptjs
+* Express Validator
+
+## ✨ Features
+
+* User Registration and Login
+* JWT Authentication
+* Car Listings
+* Car Details
+* Car Booking
+* Wishlist
+* User Dashboard
+* Sell Car functionality
+* Protected Routes
+* REST API
+* MongoDB database integration
+* Responsive user interface
+
+## 🏗️ Project Architecture
+
+```text
+React Frontend
+      ↓
+    Axios
+      ↓
+Node.js + Express API
+      ↓
+MongoDB Atlas
+```
+
+## 🚀 Deployment
+
+* Frontend: Netlify
+* Backend: Render
+* Database: MongoDB Atlas
+
+## 📂 Project Structure
+
+```text
+AutoHub
+├── client
+│   ├── src
+│   ├── public
+│   ├── package.json
+│   └── vite.config.js
+│
+└── server
+    ├── config
+    ├── controllers
+    ├── middleware
+    ├── models
+    ├── routes
+    ├── services
+    ├── utils
+    ├── validators
+    ├── server.js
+    └── package.json
+```
+
+## 🎯 Purpose
+
+AutoHub was developed as a full-stack project to demonstrate practical skills in frontend development, backend API development, authentication, database integration, and application deployment.
+
+## 👨‍💻 Developer
+
+**Karthik Reddy**
+
+Full Stack Developer
