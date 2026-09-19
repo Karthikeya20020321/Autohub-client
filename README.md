@@ -2,98 +2,166 @@
 
 A full-stack car e-commerce web application built with React, Node.js, Express, and MongoDB.
 
-## 🌐 Live Demo
+## 🌐 Live Project
 
-👉 **[Visit AutoHub](https://rococo-kulfi-28d0b6.netlify.app/)**
+### 👉 [🚗 Visit AutoHub](https://rococo-kulfi-28d0b6.netlify.app/)
 
 ## 💻 GitHub Repositories
 
-* **Frontend:** https://github.com/Karthikeya20020321/Autohub-client
-* **Backend:** https://github.com/Karthikeya20020321/Autohub-server
+* **Frontend:** [AutoHub Client](https://github.com/Karthikeya20020321/Autohub-client)
+* **Backend:** [AutoHub Server](https://github.com/Karthikeya20020321/Autohub-server)
 
-## 🛠️ Tech Stack
+## 🔗 Backend API
+
+[AutoHub Backend API](https://autohub-server-woz6.onrender.com)
+
+## 🛠️ Technologies Used
 
 ### Frontend
 
 * React.js
 * Vite
+* JavaScript
 * Axios
 * React Router
-* JavaScript
 * CSS
 
 ### Backend
 
 * Node.js
 * Express.js
-* MongoDB
-* Mongoose
+* REST API
 * JWT Authentication
 * bcryptjs
 * Express Validator
+* CORS
+
+### Database
+
+* MongoDB
+* Mongoose
+* MongoDB Atlas
+
+### Deployment
+
+* Netlify – Frontend
+* Render – Backend
+* MongoDB Atlas – Database
 
 ## ✨ Features
 
-* User Registration and Login
-* JWT Authentication
-* Car Listings
-* Car Details
-* Car Booking
-* Wishlist
-* User Dashboard
-* Sell Car functionality
-* Protected Routes
-* REST API
-* MongoDB database integration
-* Responsive user interface
+* 🔐 User Registration and Login
+* 🔑 JWT Authentication
+* 🚗 Browse Cars
+* 🔎 Car Details
+* ❤️ Wishlist
+* 📅 Car Booking
+* 👤 User Dashboard
+* 🏷️ Sell Car
+* 🛡️ Protected Routes
+* 🔄 REST API Integration
+* 💾 MongoDB Database Integration
+* 📱 Responsive User Interface
 
-## 🏗️ Project Architecture
-
-```text
-React Frontend
-      ↓
-    Axios
-      ↓
-Node.js + Express API
-      ↓
-MongoDB Atlas
-```
-
-## 🚀 Deployment
-
-* Frontend: Netlify
-* Backend: Render
-* Database: MongoDB Atlas
-
-## 📂 Project Structure
+## 🏗️ Application Architecture
 
 ```text
-AutoHub
-├── client
-│   ├── src
-│   ├── public
-│   ├── package.json
-│   └── vite.config.js
-│
-└── server
-    ├── config
-    ├── controllers
-    ├── middleware
-    ├── models
-    ├── routes
-    ├── services
-    ├── utils
-    ├── validators
-    ├── server.js
-    └── package.json
+                 ┌──────────────────────┐
+                 │     React + Vite     │
+                 │      Frontend        │
+                 └──────────┬───────────┘
+                            │
+                            │ Axios / REST API
+                            ▼
+                 ┌──────────────────────┐
+                 │   Node.js + Express  │
+                 │       Backend        │
+                 └──────────┬───────────┘
+                            │
+                            │ Mongoose
+                            ▼
+                 ┌──────────────────────┐
+                 │    MongoDB Atlas     │
+                 │       Database       │
+                 └──────────────────────┘
 ```
 
-## 🎯 Purpose
+## 📁 Frontend Structure
 
-AutoHub was developed as a full-stack project to demonstrate practical skills in frontend development, backend API development, authentication, database integration, and application deployment.
+```text
+client
+├── public
+├── src
+│   ├── assets
+│   ├── components
+│   ├── pages
+│   ├── store
+│   ├── App.jsx
+│   ├── App.css
+│   ├── api.js
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
 
-## 👨‍💻 Developer
+## 📁 Backend Structure
 
-**Karthik Reddy**
+```text
+server
+├── config
+├── controllers
+├── middleware
+├── models
+├── routes
+├── scripts
+├── services
+├── utils
+├── validators
+├── server.js
+├── package.json
+└── .env.example
+```
 
-Full Stack Developer
+## 🚀 Run Frontend Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+## 🚀 Run Backend Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Backend runs on:
+
+```text
+http://localhost:5000
+```
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the backend:
+
+```text
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLIENT_URL=your_frontend_url
+```
+
+For the frontend, configure:
+
+```text
+VITE_API_URL=your_backend_
+```
